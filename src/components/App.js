@@ -8,7 +8,7 @@ class App extends React.Component {
         fishes: {},
         order: {}
     };
-    addfish = fish => {
+    addFish = fish => {
         // Take a copy of the existing state
         const fishes = { ...this.state.fishes }; //... = spread (shallow copy / deep clone not needed)
         // Add our new fish to that fishes variable
@@ -18,7 +18,6 @@ class App extends React.Component {
         console.log("Adding a fish 🐟");
     };
     render() {
-        console.log(this.props);
         return (
             <div className="catch-of-the-day">
                 <div className="menu">
